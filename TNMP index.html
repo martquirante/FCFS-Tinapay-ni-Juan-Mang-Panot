@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<meta charset="UTF-8">
+<head>
+  <title>Tinapay ni Juan Mang Panot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="TNMP style.css" />
+</head>
+<body>
+
+<header>
+  <table style="width: 100%; height: 120px;">
+    <tr>
+      <td style="width: 100px;">
+        <img src="Tinapay ni Mang Panot withoutbg.png" alt="Mang Panot Logo" width="100" height="100">
+      </td>
+      <td style="text-align: center; vertical-align: middle;">
+        <div>
+          <h1 style="margin: 0;">Tinapay ni Juan Mang Panot</h1>
+          <p style="margin: 0;">Bite mo'y busog, presyo'y kayang-kaya!</p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</header>
+
+<section class="menu">
+  <h2>Place Your Order</h2>
+  <div class="name-section">
+    <input type="text" id="customerName" placeholder="Enter Customer name..." required />
+  </div>
+
+  <form id="orderForm" class="menu-form"></form>
+
+  <div class="submit-section">
+    <button class="btn" onclick="submitOrder()">Continue</button>
+  </div>
+</section>
+
+<section class="queue-section">
+  <div>
+    <h3>Order Queue</h3>
+    <ul id="orderQueue"></ul>
+  </div>
+  <div>
+    <h3>Served Orders</h3>
+    <ul id="servedOrders"></ul>
+  </div>
+</section>
+
+<div style="text-align: center; margin-bottom: 40px;">
+  <button class="btn" onclick="serveNextOrder()" id="serveBtn">Next Served</button>
+</div>
+
+<div id="successModal">
+  <div class="modal-content">
+    <img src="Cheked.png" alt="Success">
+    <h2>Success</h2>
+    <p>Your receipt has been saved!</p>
+    <button onclick="closeModal()" class="btn" style="background:#1565c0;">OK</button>
+  </div>
+</div>
+
+<script src="TNMP script.js"></script>
+</body>
+</html>
